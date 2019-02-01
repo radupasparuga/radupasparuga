@@ -8,7 +8,11 @@ html {
 	scroll-behavior: smooth;
 }
 
-section {
+section{
+	padding-top:20px;
+}
+
+.full-page{
 	height: 100vh;
 }
 
@@ -80,3 +84,15 @@ polygon.arrow-top {
 }
 
 /* END */
+
+.skills {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 35% 35% 35%;
+	grid-gap: 6px;
+}
+
+/* Custom bootstrap addons */
+.bg-pink{
+	background-color:#FF69B4!important
+}
