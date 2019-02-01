@@ -4,16 +4,34 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.jumbotron {
+section {
     height: 100vh;
-    position:relative;
 }
 
-.title {
+.center { 
     position: absolute;
+    text-align:center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
-    font-weight: bold
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.links {
+    word-spacing: 5px;
+}
+
+.links a{
+    color: #333;
+}
+
+.github:hover{
+    color: #333;
+}
+
+.linkedin:hover{
+    color: #4875B4;
+}
+
+.stackoverflow:hover{
+    color: #f48024;
 }
