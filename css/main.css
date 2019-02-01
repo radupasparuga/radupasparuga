@@ -35,3 +35,12 @@ section {
 .stackoverflow:hover{
     color: #f48024;
 }
+
+.arrow{
+    position:absolute;
+    text-align:center;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin:0;
+    top: 55vh;
+}
