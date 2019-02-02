@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
-	font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 section {
-	padding-top: 20px;
+  padding-top: 20px;
 }
 
-a:hover{
-	text-decoration: none;
+
+a:hover {
+  text-decoration: none;
 }
 
 #home {
-  background: url(https://i.imgur.com/qlZkzw3.jpg) no-repeat center center fixed; 
+  background: url(https://i.imgur.com/qlZkzw3.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -25,92 +26,92 @@ a:hover{
 }
 
 .full-page {
-	height: 100vh;
+  height: 100vh;
 }
 
 .center {
-	position: absolute;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .links {
-	word-spacing: 5px;
+  word-spacing: 5px;
 }
 
 .links a {
-	color: #fff;
+  color: #fff;
 }
 
 .github:hover {
-	color: #fff;
+  color: #fff;
 }
 
 .linkedin:hover {
-	color: #007bb5;
+  color: #007bb5;
 }
 
 .stackoverflow:hover {
-	color: #f48024;
+  color: #f48024;
 }
 
 .arrow {
-	position: absolute;
-	text-align: center;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	margin: 0;
-	top: 52vh;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin: 0;
+  top: 52vh;
 }
 
 /* Styling for the animated arrows */
 
 #more-arrows {
-	width: 75px;
-	height: 65px;
+  width: 75px;
+  height: 65px;
 }
 
 #more-arrows:hover polygon {
-	fill: #fff;
-	transition: all .2s ease-out;
+  fill: #fff;
+  transition: all .2s ease-out;
 }
 
 #more-arrows:hover polygon.arrow-bottom {
-	-webkit-transform: translateY(-18px);
-	transform: translateY(-18px);
+  -webkit-transform: translateY(-18px);
+  transform: translateY(-18px);
 }
 
 #more-arrows:hover polygon.arrow-top {
-	-webkit-transform: translateY(18px);
-	transform: translateY(18px);
+  -webkit-transform: translateY(18px);
+  transform: translateY(18px);
 }
 
 polygon {
-	fill: #fff;
-	transition: all .2s ease-out;
+  fill: #fff;
+  transition: all .2s ease-out;
 }
 
 polygon.arrow-middle {
-	opacity: 0.75;
+  opacity: 0.75;
 }
 
 polygon.arrow-top {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
 /* END */
 
 .skill {
-	display: grid;
+  display: grid;
   grid-template-columns: 30vw 30vw;
   grid-gap: 10px;
 }
 
 /* Custom bootstrap addons */
 .bg-pink {
-	background-color: #FF69B4 !important
+  background-color: #FF69B4 !important
 }
 
 .bg-redux {
@@ -121,15 +122,78 @@ polygon.arrow-top {
   background-color: #f14e32 !important;
 }
 
+.bg-python {
+  background-color: #2b5b84 !important;
+}
+
+.bg-java {
+  background-color: red !important;
+}
+
 .custom-jumbotron {
-	padding: 1rem 1rem;
-	margin-bottom: 1rem;
-	background-color: white;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
 }
 
 @media (min-width:576px) {
-	.custom-jumbotron {
-		padding: 4rem 2rem
-	}
+  .custom-jumbotron {
+    padding: 4rem 2rem
+  }
 }
+
 /* END */
+
+/* Skills grid styling */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "text js""text cpp""text react""text redux""text vue""text node""text html""text git""text python""text java";
+}
+
+.text {
+  grid-area: text;
+}
+
+.js {
+  grid-area: js;
+}
+
+.cpp {
+  grid-area: cpp;
+}
+
+.react {
+  grid-area: react;
+}
+
+.redux {
+  grid-area: redux;
+}
+
+.vue {
+  grid-area: vue;
+}
+
+.node {
+  grid-area: node;
+}
+
+.html {
+  grid-area: html;
+}
+
+.git {
+  grid-area: git;
+}
+
+.python {
+  grid-area: python;
+}
+
+.java {
+  grid-area: java;
+}
+
+/* End */
