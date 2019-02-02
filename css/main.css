@@ -18,7 +18,7 @@ a:hover {
 }
 
 .bg-grey {
-  background-color: #eef;
+  background-color: #efefef;
 }
 
 #home {
@@ -140,8 +140,17 @@ polygon.arrow-top {
   background-color: white;
 }
 
+.grey-jumbotron {
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #efefef;
+}
+
 @media (min-width:576px) {
   .custom-jumbotron {
+    padding: 4rem 2rem
+  }
+  .grey-jumbotron {
     padding: 4rem 2rem
   }
 }
