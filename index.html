@@ -12,7 +12,7 @@
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
 	 crossorigin="anonymous">
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +20,9 @@
 	<!-- Navbar -->
 
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">Navbar</a>
+		<a class="navbar-brand" href="#">
+			<img src="./img/rp.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
 		 aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -191,8 +193,8 @@
 					<div class="timeline-content">
 						<h4>Front-end Developer Intern</h4>
 						<p class="timeline-content-date">Jul 2018 - Dec 2018</h2>
-						<p>- designed the main UI of the Apollo platform using Vue.js <br>
-								- developed a highly scalable server architecture that is based on a Rest Api in Node<br> 
+							<p>- designed the main UI of the Apollo platform using Vue.js <br>
+								- developed a highly scalable server architecture that is based on a Rest Api in Node<br>
 								- implemented a source control solution using Gitlab <br>
 								- tested Javascript features <br>
 								- updated the codebase from old Javascript to new Es6 syntax <br>
@@ -201,58 +203,81 @@
 				</div>
 				<div class="timeline-item">
 					<div class="timeline-icon">
-							<img src="./img/br.jpg">
+						<img src="./img/br.jpg">
 					</div>
 					<div class="timeline-content">
 						<h4>Freelancer</h4>
 						<p class="timeline-content-date">Oct 2017 - Jul 2018</h2>
-						<p>- designed responsive websites for startups <br>
+							<p>- designed responsive websites for startups <br>
 								- updated old codebases to new syntax, therefore increasing speed <br>
 								- used modern OOP practices <br>
 								- turned web designs into pixel perfect websites</p>
 					</div>
 				</div>
-				
-		</div>
+
+			</div>
 	</section>
 
 	<!-- Portofolio section -->
 
 	<section class="bg-white text-black full-page" id="portofolio">
-			<div class="slider">
-					<div class="arrows">
-						<a class="previous" >&#xf054;</a>
-						<a class="next" >&#xf054;</a>
-					</div>
-					<div class="slides">
-						<div class="slide active">
-							<h2>WorldWide Students</h2>
-							<p>A platform for students to meet other students from all around the world in React, Redux and Node
-								</p>
-							<a target="_blank" href="https://github.com/radupasparuga/WorldWideStudents">Click</a>
-						</div>
-						<div class="slide">
-							<h2>Discord Bot</h2>
-							<p>A simple discord bot that plays music coded in Node</p>
-							<a target="_blank" href="https://github.com/radupasparuga/discord-bot">Click</a>
-						</div>
-						<div class="slide">
-							<h2>Crypto Trades </h2>
-							<p>Vue SPA that shows the latest prices in different cryptocurrencies</p>
-							<a target="_blank" href="https://github.com/radupasparuga/crypto_trades">Click</a>
-						</div>
-					</div>
-					<div class="bullets">
-					</div>
+		<div class="slider">
+			<div class="arrows">
+				<a class="previous">&#xf054;</a>
+				<a class="next">&#xf054;</a>
+			</div>
+			<div class="slides">
+				<div class="slide active">
+					<h2>WorldWide Students</h2>
+					<p>A platform for students to meet other students from all around the world in React, Redux and Node
+					</p>
+					<a target="_blank" href="https://github.com/radupasparuga/WorldWideStudents">Click</a>
 				</div>
+				<div class="slide">
+					<h2>Discord Bot</h2>
+					<p>A simple discord bot that plays music coded in Node</p>
+					<a target="_blank" href="https://github.com/radupasparuga/discord-bot">Click</a>
+				</div>
+				<div class="slide">
+					<h2>Crypto Trades </h2>
+					<p>Vue SPA that shows the latest prices in different cryptocurrencies</p>
+					<a target="_blank" href="https://github.com/radupasparuga/crypto_trades">Click</a>
+				</div>
+			</div>
+			<div class="bullets">
+			</div>
+		</div>
 	</section>
 
 
 	<!-- Contact section -->
 
-	<section class="bg-grey text-black full-page" id="contact">
-		<div class="container grey-jumbotron">
-			<h1>Contact Section</h1>
+	<section class="bg-grey text-black" id="contact">
+		<div class="custom-container contact-form">
+			<div class="contact-image">
+				<img src="http://afronesiatours.co.za/wp-content/uploads/2018/02/e-mail-logo.png" alt="rocket_contact" />
+			</div>
+			<form method="post">
+				<h3>Leave me a message</h3>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+						</div>
+						<div class="form-group">
+							<input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+						</div>
+						<div class="form-group">
+							<input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+						</div>
+					</div>
+				</div>
+			</form>
 		</div>
 	</section>
 
