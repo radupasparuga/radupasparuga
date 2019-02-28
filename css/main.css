@@ -140,6 +140,10 @@ polygon.arrow-top {
   background-color: #2b5b84 !important;
 }
 
+.bg-go {
+  background-color: #00ADD8 !important;
+}
+
 .bg-java {
   background-color: #f4bc42 !important;
 }
@@ -173,7 +177,7 @@ polygon.arrow-top {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "text js""text cpp""text react""text redux""text vue""text node""text html""text git""text python""text java";
+  grid-template-areas: "text js""text cpp""text react""text redux""text vue""text node""text html""text git""text python""text go"text java";
 }
 
 .text {
@@ -214,6 +218,10 @@ polygon.arrow-top {
 
 .python {
   grid-area: python;
+}
+
+.go {
+  grid-area: go;
 }
 
 .java {
